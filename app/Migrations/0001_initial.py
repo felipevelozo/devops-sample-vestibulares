@@ -19,4 +19,4 @@ class Migration(migrations.Migration):
                 ('instituicao', models.CharField(max_length=200)),
             ],
         ),
-    ]0001_initial.py
+    ]

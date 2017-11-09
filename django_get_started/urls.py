@@ -16,7 +16,8 @@ urlpatterns = patterns('',
     url(r'^$', 'app.views.home', name='home'),
     url(r'^contact$', 'app.views.contact', name='contact'),
     url(r'^about', 'app.views.about', name='about'),
-    url(r'^cadastro_cursos', 'app.views.cadastro_cursos', name='cadastro_cursos'),
+    url(r'^lista_cursos', 'app.views.lista_cursos', name='lista_cursos'),
+    url(r'^lista_vestibulares', 'app.views.lista_vestibulares', name='lista_vestibulares'),
     url(r'^login/$',
         'django.contrib.auth.views.login',
         {
@@ -36,6 +37,7 @@ urlpatterns = patterns('',
         },
         name='logout'),
 
+    url(r'^lista_candidatos', 'app.views.lista_candidatos', name='lista_candidatos'),
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
 
